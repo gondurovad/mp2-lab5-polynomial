@@ -1,0 +1,117 @@
+﻿  sample_polynomial.cpp
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\node.h(23): error C2059: синтаксическая ошибка: <
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\node.h(25): note: выполняется компиляция ссылки на экземпляр шаблон класс "Node<T>"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\node.h(23): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(27): error C2989: List: класс шаблон уже объявлен как не класс шаблон
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\node.h(23): note:  см. объявление "List"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(6): error C3857: "List": множественные списки параметров шаблон не допускаются
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(30): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(30): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(31): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(31): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(38): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(38): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(39): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(39): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): error C2039: IsEmpty: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(59): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(59): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(64): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(64): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(64): error C2374: List: переопределение; множественная инициализация
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): note:  см. объявление "List"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(64): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(64): error C2039: IsSort: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(65): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(65): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(77): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(77): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(77): error C2371: List: переопределение; различные базовые типы
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): note:  см. объявление "List"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(77): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(77): error C2039: GetLength: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(78): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(78): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(89): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(89): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(89): error C2040: List: "Node<T> *" отличается по уровням косвенного обращения от "bool"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(89): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(89): error C2039: GetHead: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(90): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(90): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(95): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(95): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(95): error C2040: List: "Node<T> *" отличается по уровням косвенного обращения от "bool"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(95): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(95): error C2039: GetFirst: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(96): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(96): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(104): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(104): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(104): error C2040: List: "Node<T> *" отличается по уровням косвенного обращения от "bool"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(104): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(104): error C2039: GetLast: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(105): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(105): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(117): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(117): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(117): error C2182: List: недопустимое использование типа "void"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(117): error C2371: List: переопределение; различные базовые типы
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): note:  см. объявление "List"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(117): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(117): error C2039: Insert: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(118): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(118): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2182: List: недопустимое использование типа "void"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2371: List: переопределение; различные базовые типы
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): note:  см. объявление "List"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2039: Delete: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2065: T: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(141): error C2923: Node: "T" не является допустимым аргументом типа шаблон для параметра "T"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(142): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(142): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(156): error C2988: неопознанное объявление или определение шаблона
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(156): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(156): error C2182: List: недопустимое использование типа "void"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(156): error C2371: List: переопределение; различные базовые типы
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(58): note:  см. объявление "List"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(156): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(156): error C2039: Merge: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(157): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\list.h(157): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): error C2504: List: не определен базовый класс
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(38): error C2059: синтаксическая ошибка: <
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(40): error C2065: pHead: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(43): error C2275: Monom: недопустимое использование этого типа в качестве выражения
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\monom.h(6): note:  см. объявление "Monom"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(43): error C2039: Insert: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(50): error C2065: pHead: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(53): error C2065: pHead: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(56): error C3861: Delete: идентификатор не найден
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(74): error C3861: Delete: идентификатор не найден
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(80): error C2039: List: не является членом "Polinom"
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): note:  см. объявление "Polinom"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(80): error C2039: Insert: не является членом "`global namespace'"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(86): error C3861: GetLength: идентификатор не найден
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(86): error C2039: GetLength: не является членом "Polinom"
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): note:  см. объявление "Polinom"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(90): error C2065: pHead: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(91): error C2039: pHead: не является членом "Polinom"
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): note:  см. объявление "Polinom"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(93): error C2065: pHead: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(107): error C2065: pHead: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(108): error C2039: GetFirst: не является членом "Polinom"
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): note:  см. объявление "Polinom"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(109): error C2039: GetHead: не является членом "Polinom"
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): note:  см. объявление "Polinom"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(115): error C2065: pHead: необъявленный идентификатор
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(123): error C2039: Merge: не является членом "Polinom"
+  C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(11): note:  см. объявление "Polinom"
+C:\Users\Владимир\source\repos\mp2-lab5-polynomial\mp2-lab5-polynomial\polynomial.h(123): fatal error C1003: число ошибок превышает 100; остановка компиляции
