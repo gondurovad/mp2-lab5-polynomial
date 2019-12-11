@@ -6,9 +6,9 @@
 class Monom
 {
 private:
-	double coeff_;
-	int index_;
-	int sum_;
+	double coeff_;    //коэффициент монома
+	int index_;       //набор степеней
+	int sum_;         //свёртка степеней
 public:
 	Monom(double coeff = 0.0, int index = -1);
 	Monom(const Monom& q);
@@ -24,6 +24,7 @@ public:
 	bool operator == (const Monom& q) const;
 	bool operator < (const Monom& q) const;
 	bool operator > (const Monom& q) const;
+	bool operator > (int c);
 
 	const Monom& operator = (const Monom& q);
 	Monom& operator += (const Monom& q);
@@ -45,7 +46,7 @@ public:
 Monom::Monom(double coeff, int index)
 {
 	if ((index > 999) || (index < -1)) {
-		throw "big dagree";
+		throw "big degree";
 	}
 	coeff_ = coeff;
 	index_ = index;
@@ -92,7 +93,7 @@ void Monom::SetIndex(int index)
 
 bool Monom::operator == (const Monom& q) const
 {
-	return ((coeff_ == q.coeff_) && (index_ == q.index_) && (sum_ == q.sum_)); //////////////////////////////////
+	return ((coeff_ == q.coeff_) && (index_ == q.index_) && (sum_ == q.sum_)); 
 }
 
 bool Monom::operator != (const Monom & q) const
@@ -108,6 +109,11 @@ bool Monom::operator < (const Monom & q) const
 bool Monom::operator > (const Monom & q) const
 {
 	return index_ > q.index_;
+}
+
+bool Monom::operator > (int c) 
+{
+	return coeff_ > c;
 }
 
 const Monom& Monom::operator = (const Monom & q)
@@ -175,9 +181,8 @@ const Monom Monom::operator * (const Monom & q) const
 {
 	Monom res(coeff_ * q.coeff_, (index_ + q.index_));
 
-	// делаем проверку на превышение максимальной степени для ненулевых мономов
 	if (res.sum_ != (sum_ + q.sum_) && (res.coeff_ != 0)) {
-		throw "big degree";
+		throw "big degree";         //превышение максимальной степени
 	}
 	return res;
 }
@@ -199,7 +204,20 @@ istream& operator >> (istream & is, Monom & m)
 	return is;
 }
 
-ostream& operator << (ostream & os, const Monom & m)
+/*ostream& operator << (ostream & os, const Monom & m)
+{
+	os << m.coeff_ ;
+	int degree = m.index_;
+	int z = degree % 10;
+	degree /= 10;
+	int y = degree % 10;
+	degree /= 10;
+	int x = degree;
+	os << "x^" << x << "y^" << y << "z^" << z;
+	return os;
+}*/ 
+
+ostream& operator << (ostream& os, const Monom& m)
 {
 	os << "(" << m.coeff_ << "," << m.index_ << ")";
 	return os;

@@ -7,18 +7,17 @@ template <typename T>
 class Node
 {
 private:
-	Node<T>* pNext;
+	Node<T>* pNext;   //указатель на следующее звено
 	T data;
 public:
 	Node();
 	Node(T val);
-	Node(const Node<T>& t);
 
 	T GetData();
 	Node<T>* GetNext();
 
 	Node<T>& operator += (const Node<T>& q);   // сложение двух идущих друг за другом звеньев
-											// сложение data, перестановка указателя
+											   // сложение data, перестановка указателя
 
 	friend class List<T>;
 	friend class Polinom;

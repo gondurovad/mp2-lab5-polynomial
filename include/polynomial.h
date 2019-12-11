@@ -11,21 +11,21 @@ using namespace std;
 class Polinom : public List<Monom>
 {
 public:
-	Polinom(Monom* monoms = nullptr, int km = 0);  // monoms - массив мономов
-										 // km - количество мономов в полиноме
+	Polinom(Monom* monoms = nullptr, int km = 0);  //monoms - массив мономов
+										           // km - количество мономов в полиноме
 
-	void SimilarTerms();     // привести подобные и убрать нулевые
-	void Insert(const Monom& q);   // вставить на нужное место и привести подобные
+	void SimilarTerms();           //приведение подобных
+	void Insert(const Monom& q);   //вставка и приведение подобных
 
 	bool operator == (const Polinom& q) const;
 
 	const Polinom& operator = (const Polinom& q);
 	const Polinom operator + (const Polinom& q) const;
 	const Polinom operator - (const Polinom& q) const;
-	Polinom& operator += (const Polinom& q); //
-	Polinom& operator *= (const Polinom& q); //
-	Polinom operator * (double d) const; //
-	Polinom operator * (const Monom& m) const; //
+	Polinom& operator += (const Polinom& q); 
+	Polinom& operator *= (const Polinom& q); 
+	Polinom operator * (double d) const; 
+	Polinom operator * (const Monom& m) const; 
 	Polinom operator * (const Polinom& q) const;
 	double ValueinPoint(double val1, double val2, double val3);
 
@@ -39,7 +39,7 @@ Polinom::Polinom(Monom* monoms, int km) : List<Monom>()
 {
 	Node<Monom>* curr = pHead;
 	for (int i = 0; i < km; i++) {
-		if (monoms[i].GetCoeff() != 0) {  ///////////////////////////////////////////////////////
+		if (monoms[i].GetCoeff() != 0) {  
 			List<Monom>::Insert(monoms[i]);
 		}
 	}
@@ -52,7 +52,7 @@ void Polinom::SimilarTerms()
 
 	while (curr != pHead) {
 
-		if (prev->data.GetCoeff() == 0) {   //////////////////////////////////////
+		if (prev->data.GetCoeff() == 0) {   
 			Delete(prev);
 			prev = prev->pNext;
 			curr = curr->pNext;
@@ -70,7 +70,7 @@ void Polinom::SimilarTerms()
 	}
 
 	// проверяем на равенство нулю последний моном
-	if (prev->data.GetCoeff() == 0) {  /////////////////////////////////////////////////////////////
+	if (prev->data.GetCoeff() == 0) { 
 		Delete(prev);
 	}
 }
@@ -104,8 +104,8 @@ bool Polinom::operator == (const Polinom& q) const
 const Polinom& Polinom::operator = (const Polinom& q)
 {
 	if (this != &q) {
-		Node<Monom>* pCurr = pHead;        // указатель, которым идём по полиному this
-		Node<Monom>* walk = q.GetFirst();  // укзатель, которым идём по полиному q
+		Node<Monom>* pCurr = pHead;        
+		Node<Monom>* walk = q.GetFirst();  // указатель, которым идём по полиному q
 		while (walk != q.GetHead()) {
 			Node<Monom>* tlink = new Node<Monom>(walk->data);
 			pCurr->pNext = tlink;
@@ -201,7 +201,6 @@ double Polinom::ValueinPoint(double val1, double val2, double val3)
 		curr *= pow(val2, y);
 		curr *= pow(val3, z);
 		res += curr;
-		//res += ((act->data).GetCoeff() * pow(val1, x) * pow(val2, y) * pow(val3, z));
 		act = act->pNext;
 	}
 	return res;
@@ -220,7 +219,27 @@ istream& operator >> (istream & is, Polinom & p)
 	return is;
 }
 
-ostream& operator << (ostream & os, const Polinom & p)
+/*ostream& operator << (ostream & os, const Polinom & p)
+{
+	if (p.IsEmpty()) {
+		os << "0";
+		return os;
+	}
+	int length = p.GetLength();
+	Node<Monom>* curr = p.GetFirst();
+	os << curr->GetData();
+	curr = curr->GetNext();
+	for (int i = 1; i < length; i++) {
+		if (curr->GetData() > 0)
+			cout << "+";
+
+		os << curr->GetData()<< endl;
+		curr = curr->GetNext();
+	}
+	return os;
+}*/
+
+ostream& operator << (ostream& os, const Polinom& p)
 {
 	if (p.IsEmpty()) {
 		os << "0";

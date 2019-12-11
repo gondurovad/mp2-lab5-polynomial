@@ -7,7 +7,7 @@ template <typename T>
 class List
 {
 protected:
-	Node<T>* pHead;
+	Node<T>* pHead;          //указатель на фиктивную голову списка
 public:
 	List();
 	List(const List<T>& q);
@@ -20,18 +20,18 @@ public:
 	Node<T>* GetFirst() const;
 	Node<T>* GetLast() const;
 
-	virtual void Insert(const T& val);   //вставка на нужное место (по убыванию)
-	void Delete(Node<T>* pl);
+	virtual void Insert(const T& val);   //вставка на нужное место по убыванию
+	void Delete(Node<T>* pl);            //удаление звена
 
-	void Join(const List<T>& q);
+	void Join(const List<T>& q);         //слияние двух списков
 };
 
 template <typename T>
 List<T>::List()
 {
-	Node<T>* ph = new Node<T>();   // выделяем память под фиктивную голову
+	Node<T>* ph = new Node<T>();   //выделяем память под фиктивную голову
 	pHead = ph;
-	pHead->pNext = pHead;     // замыкаем список на фиктивной голове
+	pHead->pNext = pHead;          //замыкаем список на фиктивной голове
 }
 
 template <typename T>
@@ -40,13 +40,13 @@ List<T>::List(const List<T>& q)
 	Node<T>* ph = new Node<T>();
 	pHead = ph;
 	ph->pNext = pHead;
-	Node<T>* pq = q.pHead->pNext; // указатель, которым идём по списку q
+	Node<T>* pq = q.pHead->pNext; 
 
 	while (pq != q.pHead) {
 
-		Node<T>* pc = new Node<T>(pq->data);  // создаем дубликаты звеньев списка q
-		ph->pNext = pc;                      // и добавляем эти дубликаты в новый список
-		pc->pNext = pHead;                   // после каждой вставки замыкаем список на фиктивной голове
+		Node<T>* pc = new Node<T>(pq->data);  
+		ph->pNext = pc;                      
+		pc->pNext = pHead;                   //замыкаем список на фиктивной голове
 
 		ph = pc;
 		pq = pq->pNext;
@@ -116,22 +116,19 @@ Node<T>* List<T>::GetLast() const
 template <typename T>
 void List<T>::Insert(const T & val)
 {
-	Node<T>* ins = new Node<T>(val);  // создаем звено, которое будем вставлять
+	Node<T>* ins = new Node<T>(val);  //создаем звено для вставки
 	Node<T>* prev = pHead;
 	Node<T>* curr = pHead->pNext;
 
-	if (prev == curr) {
-		// список пустой => всталяем новое звено сразу после фиктивной головы
+	if (prev == curr) {              //список пустой
 		pHead->pNext = ins;
 		ins->pNext = pHead;
 	}
 	else {
-		// ищем место для вставки нового звена
 		while ((curr->data > ins->data) && (curr != pHead)) {
 			curr = curr->pNext;
 			prev = prev->pNext;
 		}
-		// вставляем новое звено на нужное место
 		prev->pNext = ins;
 		ins->pNext = curr;
 	}
@@ -155,25 +152,20 @@ void List<T>::Delete(Node<T> * pl)
 template <typename T>
 void List<T>::Join(const List<T> & q)
 {
-	Node<T>* pCurr = pHead;   // указатель на текущий в результирующем списке 
+	Node<T>* pCurr = pHead;   //указатель на текущий в результирующем списке 
 
 	Node<T>* pPrev1 = pHead;
 	Node<T>* pPrev2 = q.pHead;
-	Node<T>* pCurr1 = pHead->pNext;     // указатель, которым идём по первому списку
-	Node<T>* pCurr2 = (q.pHead)->pNext; // указатель, которым идём по второму списку
+	Node<T>* pCurr1 = pHead->pNext;     //указатель, которым идём по первому списку
+	Node<T>* pCurr2 = (q.pHead)->pNext; //указатель, которым идём по второму списку
 
-									  // идем двумя указателями по спискам
 	while ((pCurr1 != pHead) && (pCurr2 != q.pHead)) {
 
 		if ((pCurr1->data) > (pCurr2->data)) {
-			// если элемент первого списка больше элемента второго списка 
 
-			// двигаем указатель curr вперед, присваивая ему значение указателя 
-			// больше элемента 
 			pCurr->pNext = pCurr1;
 			pCurr = pCurr1;
 
-			// двигаем указатель, которым идем по первому списку
 			pPrev1 = pCurr1;
 			pCurr1 = pCurr1->pNext;
 		}
@@ -187,9 +179,9 @@ void List<T>::Join(const List<T> & q)
 
 		}
 	}
-
-	if (pCurr1 == pHead) {
-		// первый список закончился => присоединяем остаток 
+	//присоединяем "хвосты"
+	if (pCurr1 == pHead) { //первый список закончился
+		
 		pPrev1->pNext = pCurr2;
 		while (pCurr2 != q.pHead) {
 			pPrev2 = pCurr2;
@@ -197,8 +189,8 @@ void List<T>::Join(const List<T> & q)
 		}
 		pPrev2->pNext = pHead;
 	}
-	else if (pCurr2 == q.pHead) {
-		// второй список закончился => соединаяем с остатком первого 
+	else if (pCurr2 == q.pHead) {  //второй список закончился
+
 		pPrev2->pNext = pCurr1;
 	}
 

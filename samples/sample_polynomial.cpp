@@ -17,24 +17,24 @@ int main()
 
 	cout << "Choose an operation on polynomials" << endl;
 	while (true) {
-		cout << "1. Add f and g" << endl;
-		cout << "2. Subtract f and g" << endl;
-		cout << "3. Multiply f and g" << endl;
-		cout << "4. Find the value of f in a point" << endl;
+		cout << "1. Subtract f and g" << endl;
+		cout << "2. Multiply f and g" << endl;
+		cout << "3. Find the value of f in a point" << endl;
+		cout << "4. Add f and g" << endl;
 
 		int menu;
 		cin >> menu;
 
-		if (menu == 1) {
+		if (menu == 4) {
 			cout << endl << "f + g: " << endl << (f + g) << endl;
 		}
-		else if (menu == 2) {
+		else if (menu == 1) {
 			cout << endl << "f - g: " << endl << (f - g) << endl;
 		}
-		else if (menu == 3) {
+		else if (menu == 2) {
 			cout << endl << "f * g: " << endl << (f * g) << endl;
 		}
-		else if (menu == 4) {
+		else if (menu == 3) {
 			double a, b, c;
 			cout << "Enter point" << endl;
 			cin >> a >> b >> c;
